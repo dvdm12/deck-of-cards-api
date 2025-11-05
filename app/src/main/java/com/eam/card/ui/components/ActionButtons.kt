@@ -7,11 +7,14 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.eam.card.viewmodel.DeckViewModel
+import com.eam.card.R
 
 /**
  * ActionButtons - Primary user action interface for deck management
@@ -40,6 +43,16 @@ fun ActionButtons(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+
+        Icon(
+            painter = painterResource(R.drawable.ic_poker_casino_svgrepo_com),
+            contentDescription = stringResource(R.string.poker_casino_icon),
+            modifier = Modifier
+                .size(166.dp)
+                .padding(bottom = 24.dp),
+            tint = Color.Unspecified
+        )
+
         // Primary action button - Create new deck
         // Uses elevated style to stand out as the main action
         ElevatedButton(
@@ -215,7 +228,7 @@ private fun ActionButtonsPreview(deckId: String?) {
             Text(
                 text = "Create a deck first to draw cards",
                 style = MaterialTheme.typography.bodySmall,
-                color = Color.White
+                color = MaterialTheme.colorScheme.primaryContainer
             )
         }
     }

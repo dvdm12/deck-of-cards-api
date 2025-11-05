@@ -4,4 +4,6 @@
     // Base URL for API
     <string name="base_url">https://deckofcardsapi.com/api/deck/</string>
 
+    <string name="poker_casino_icon">Ícono de Poker Casino</string>
+
 </resources>

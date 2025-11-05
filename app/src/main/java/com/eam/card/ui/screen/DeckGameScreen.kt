@@ -5,8 +5,6 @@ import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.AccountBox
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -16,11 +14,14 @@ import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.eam.card.R
 import com.eam.card.model.deck.CardDto
 import com.eam.card.model.deck.CardImagesDto
 import com.eam.card.ui.components.*
@@ -186,9 +187,9 @@ private fun ModernTopBar(cardCount: Int, remainingCards: Int) {
                     color = Color(0xFF6366F1).copy(alpha = 0.2f)
                 ) {
                     Icon(
-                        imageVector = Icons.Default.AccountBox,
-                        contentDescription = "Deck icon",
-                        tint = Color(0xFF6366F1),
+                        painter = painterResource(R.drawable.ic_poker_svgrepo_com),
+                        contentDescription = stringResource(R.string.poker_casino_icon),
+                        tint = Color.White,
                         modifier = Modifier
                             .padding(8.dp)
                             .size(24.dp)

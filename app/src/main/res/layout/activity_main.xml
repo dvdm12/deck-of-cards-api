@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <!-- Ícono de Poker Casino -->
+    <ImageView
+        android:id="@+id/image_poker_casino"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/ic_poker_casino_svgrepo_com"
+        android:contentDescription="@string/poker_casino_icon"
+        android:tint="@android:color/black"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/image_poker"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/ic_poker_svgrepo_com"
+        android:contentDescription="@string/poker_casino_icon"
+        android:layout_gravity="center"
+        android:tint="@android:color/black"/>
+
+</LinearLayout>
