@@ -1,4 +1,4 @@
-package com.eam.brewery
+package com.eam.card
 
 import org.junit.Test
 

@@ -1,6 +1,5 @@
-package com.eam.brewery.ui.theme
+package com.eam.card.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

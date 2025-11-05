@@ -1,4 +1,4 @@
-package com.eam.brewery.ui.theme
+package com.eam.card.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

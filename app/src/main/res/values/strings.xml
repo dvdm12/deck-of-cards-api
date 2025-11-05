@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">brewery</string>
+    <string name="app_name">deck</string>
 
     // Base URL for API
-    <string name="base_url">https://pokeapi.co/api/v2/</string>
+    <string name="base_url">https://deckofcardsapi.com/api/deck/</string>
 
 </resources>

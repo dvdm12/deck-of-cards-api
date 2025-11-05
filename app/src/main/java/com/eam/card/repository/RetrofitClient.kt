@@ -1,7 +1,7 @@
-package com.eam.brewery.viewmodel.ohttp
+package com.eam.card.repository
 
 import android.content.Context
-import com.eam.brewery.R
+import com.eam.card.R
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -33,8 +33,8 @@ object RetrofitClient {
      * Creates a Retrofit instance using the base URL defined in strings.xml.
      * The context is used to dynamically read the string resource.
      */
-    fun getInstance(context: Context): Retrofit {
-        val baseUrl = context.getString(R.string.base_url)
+    fun getInstance(context: Context, customBaseUrl: String? = null): Retrofit {
+        val baseUrl = customBaseUrl ?: context.getString(R.string.base_url)
         return Retrofit.Builder()
             .baseUrl(baseUrl)
             .client(okHttpClient)

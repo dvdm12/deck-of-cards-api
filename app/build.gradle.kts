@@ -5,13 +5,13 @@ plugins {
 }
 
 android {
-    namespace = "com.eam.brewery"
+    namespace = "com.eam.card"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.eam.brewery"
+        applicationId = "com.eam.card"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -51,6 +51,7 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
     implementation(libs.okhttp.logging)
+    implementation(libs.coil.compose)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
 
     implementation(libs.androidx.compose.ui.graphics)
