@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">brewery</string>
+
+    // Base URL for API
+    <string name="base_url">https://pokeapi.co/api/v2/</string>
+
 </resources>
