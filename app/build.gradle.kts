@@ -41,6 +41,14 @@ android {
     }
 }
 
+tasks.withType<Test>().configureEach {
+    testLogging {
+        events("passed", "skipped", "failed", "standardOut", "standardError")
+        showStandardStreams = true
+    }
+}
+
+
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -48,11 +56,17 @@ dependencies {
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.ui)
 
+    //retrofit dependencies
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
     implementation(libs.okhttp.logging)
     implementation(libs.coil.compose)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+
+    //strikt dependencies
+    testImplementation(libs.strikt.core)
+    testImplementation(libs.coroutines.test)
+    testImplementation(libs.mockito.kotlin)
 
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
@@ -64,4 +78,10 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+}
+
+configurations {
+    named("androidTestImplementation") {
+        extendsFrom(configurations["testImplementation"])
+    }
 }
