@@ -110,7 +110,7 @@ fun ActionButtons(
             Text(
                 text = "Create a deck first to draw cards",
                 style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant
+                color = Color.White
             )
         }
     }
