@@ -59,17 +59,17 @@ Retrofit → Deck of Cards API
   </tr>
   <tr>
     <td>Mariana Osorio</td>
-    <td><code>MO-001</code></td>
+    <td><code>24020211026 </code></td>
     <td><img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f3a8.svg" width="18"/> UI / Compose</td>
   </tr>
   <tr>
     <td>David Mantilla</td>
-    <td><code>DM-002</code></td>
+    <td><code>240220212015</code></td>
     <td><img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f4bb.svg" width="18"/> Arquitectura / ViewModel / Tests</td>
   </tr>
   <tr>
     <td>Jhovanny Quiceno</td>
-    <td><code>JQ-003</code></td>
+    <td><code>240220221047</code></td>
     <td><img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f50c.svg" width="18"/> Networking / Retrofit</td>
   </tr>
 </table>
